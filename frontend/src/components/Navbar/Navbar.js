@@ -5,31 +5,41 @@ import { Logo } from '../Logo/Logo';
 import { NavButton } from '../NavButton/NavButton';
 import { Container } from '../Container/Container';
 import './Navbar.css';
-import {useEffect} from 'react';
-import isLoggedIn from '../../App'
+import { useEffect } from 'react';
+import isLoggedIn from '../../App';
 
 function Navbar({ onModalToggle, text }) {
-
-	
-
-  return (
-    <>
-      <nav className="navbar">
-        <Container d="container--row">
-          <Logo />
-          <Link to="/" className="navbar-logo">
-            -Stack
-          </Link>
-          {/* Navbar Menu Items */}
-          <ul className="nav-menu">
-            <NavLink buttonStyle='btn--dropdown' to='/about'>About Us</NavLink>
-            <NavButton onModalToggle={onModalToggle}>{text}</NavButton>
-            {/* <NavButton onModalToggle={onModalToggle}>Register</NavButton> */}
-          </ul>
-        </Container>
-      </nav>
-    </>
-  )
+	return (
+		<>
+			<nav className="navbar">
+				<Container d="container--row">
+					<Logo />
+					<Link to="/" className="navbar-logo">
+						-Stack
+					</Link>
+					{/* Navbar Menu Items */}
+					<ul className="nav-menu">
+						<NavLink buttonStyle="btn--dropdown" to="/buy">
+							Buy
+						</NavLink>
+						<NavLink buttonStyle="btn--dropdown" to="/sell">
+							Sell
+						</NavLink>
+						<NavLink buttonStyle="btn--dropdown" to="/rent">
+							Rent
+						</NavLink>
+						<NavLink buttonStyle="btn--dropdown" to="/about">
+							About Us
+						</NavLink>
+						<NavButton onModalToggle={onModalToggle}>
+							{text}
+						</NavButton>
+						{/* <NavButton onModalToggle={onModalToggle}>Register</NavButton> */}
+					</ul>
+				</Container>
+			</nav>
+		</>
+	);
 }
 
-export default Navbar
+export default Navbar;

@@ -35,7 +35,7 @@
 
 .nav-menu {
 	display: flex;
-	gap: 1.25em;
+	/* gap: 0.5em; */
 	list-style: none;
 	text-align: center;
 	width: 100%;
