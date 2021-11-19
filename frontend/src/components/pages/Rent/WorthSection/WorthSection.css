@@ -1,0 +1,10 @@
+.worth-section-container {
+	width: 100%;
+	font-family: DM Sans;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.worth-inputs {
+	margin: 3.5rem auto;
+}

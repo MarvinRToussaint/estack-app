@@ -1,0 +1,50 @@
+.amenities-container {
+	width: 100%;
+}
+
+/* .amenities-container div {
+	margin: 3.5rem 0;
+} */
+/* This css is for normalizing styles. You can skip this. */
+/* *, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  } */
+
+.form-container {
+	display: grid;
+
+	padding: 50px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+	font-family: DM Sans;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.form-group input[type="checkbox"] {
+	-webkit-appearance: none;
+	width: 30px;
+	height: 30px;
+	background: white;
+	border-radius: 5px;
+	border: 2px solid #555;
+}
+
+.form-group input[type="checkbox"]:checked {
+	-webkit-appearance: none;
+	width: 30px;
+	height: 30px;
+	background: black;
+	border-radius: 5px;
+	border: 2px solid #555;
+}
+
+.form-group label {
+	margin-left: 1rem;
+}
