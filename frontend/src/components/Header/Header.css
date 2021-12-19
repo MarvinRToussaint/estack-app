@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: -100;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* outline: 5px solid firebrick; */
 }
 
@@ -28,4 +28,27 @@ img {
     justify-content: space-evenly;
     align-items: center;
     /* background-color: firebrick; */
+}
+
+.link{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.advertisement {
+    max-width: 91rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    outline: 5px solid black;
+    margin-top: 50px;
+    padding: 20px 0 20px;
+    
+}
+
+.search-bar {
+    width: 50%;
 }

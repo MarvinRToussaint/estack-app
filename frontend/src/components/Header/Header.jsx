@@ -1,5 +1,5 @@
 import Logo from '../../pages/Landing/assets/estack-logo.png';
-import House from '../../pages/Landing/assets/house-ad.xcf'
+import House from '../../pages/Landing/assets/sell.svg'
 import './Header.css'
 function Header() {
     return (
@@ -14,9 +14,20 @@ function Header() {
               <a className="link">Rent</a>
               <a className="link">About us</a>      
             </nav>
+            
             <div className="advertisement">
-              {/* <img src={House} alt='House Ad'/>     */}
+              <div className="ad-photo">  
+              <img src={House} alt='House Ad'/>    
+              </div>
+              <form className='search-bar'>
+                <label>
+                  Home is not a place it's a feeling
+              
+                  <input type='text'></input>    
+                </label>
+              </form>
             </div>
+          
           </div>    
         </header>
     )
