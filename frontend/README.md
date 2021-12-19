@@ -21,4 +21,4 @@ npm start // to start local server
 
 ## Problems
 
--   [ ] Dialog input lose foucs after typing a char
+-   [ ] Dialog input lose focus after typing a char
